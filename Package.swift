@@ -9,9 +9,8 @@ let package = Package(
        .macOS(.v12)
     ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "ServerKit",
+            name: "server-kit",
             targets: ["ServerKit"]),
     ],
     dependencies: [
