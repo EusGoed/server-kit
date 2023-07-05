@@ -8,23 +8,23 @@
 import Foundation
 import Vapor
 
-extension Logger {
+public extension Logger {
     static let shared = Logger(label: "")
 }
 
-func logError(_ text: Any,_ function: String = #function) {
+public func logError(_ text: Any,_ function: String = #function) {
     Logger.shared.error("[\(function.functionName())] \(text)")
 }
 
-func logInfo(_ text: Any,_ function: String = #function ) {
+public func logInfo(_ text: Any,_ function: String = #function ) {
     Logger.shared.info("[\(function.functionName())] \(text)")
 }
 
-func logNotice(_ text: Any,_ function: String = #function ) {
+public func logNotice(_ text: Any,_ function: String = #function ) {
     Logger.shared.notice("[\(function.functionName())] \(text)")
 }
 
-func logJob(_ text: Any) {
+public func logJob(_ text: Any) {
     Logger.shared.notice("[JOBS] \(text)")
 }
 

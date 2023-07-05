@@ -7,7 +7,7 @@ import Foundation
 import FluentKit
 import Vapor
 
-extension Optional {
+public extension Optional {
     func unwrap(or abort: Abort) throws -> WrappedType {
         guard let value = self else { throw abort }
         return value

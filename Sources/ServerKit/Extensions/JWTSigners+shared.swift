@@ -7,6 +7,6 @@ import Foundation
 import JWTKit
 import Vapor
 
-extension JWTSigners {
+public extension JWTSigners {
     static let shared = JWTSigners()
 }
