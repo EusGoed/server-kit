@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "ServerKit",
+    name: "server-kit",
     platforms: [
        .macOS(.v12)
     ],
     products: [
         .library(
-            name: "server-kit",
+            name: "ServerKit",
             targets: ["ServerKit"]),
     ],
     dependencies: [
