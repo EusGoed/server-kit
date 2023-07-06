@@ -34,12 +34,3 @@ private extension String {
         return String(self.prefix(upTo: lastIndex))
     }
 }
-extension String {
-    func errorMessage(_ function: String = #function) -> Self {
-        "❌ [\(function.functionName())] \(self)"
-    }
-    
-    func infoMessage(_ function: String = #function) -> Self {
-        "ℹ️ [\(function.functionName())] \(self)"
-    }
-}
