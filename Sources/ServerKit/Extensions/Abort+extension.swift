@@ -5,7 +5,8 @@
 import Vapor
 public extension Abort {
     init(_ status: HTTPResponseStatus, withError reason: String, underlyingError error: Error? = nil) {
-        logError("\(reason.errorMessage()) \(error != nil ? "underlying error: \(error?.localizedDescription ?? "")" : "")")
-        self.init(status, reason: reason.errorMessage())
+        let text = "\(error != nil ? "underlying error: \(error?.localizedDescription ?? "")" : "")"
+        logError(text)
+        self.init(status, reason: text)
     }
 }
