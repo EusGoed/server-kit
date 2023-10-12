@@ -17,7 +17,7 @@ let package = Package(
         .package(url: "https://github.com/vapor/jwt-kit.git", from: "4.0.0"),
         .package(url: "https://github.com/vapor/fluent.git", from: "4.0.0"),
         .package(url: "https://github.com/vapor/queues.git", from: "1.12.1"),
-        .package(url: "https://github.com/EusGoed/swift-log-pub.git", from: "1.0.1"),
+        .package(url: "https://github.com/EusGoed/swift-log-pub.git", from: "1.0.2"),
         
     ],
     targets: [
